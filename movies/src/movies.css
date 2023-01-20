@@ -1,0 +1,104 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    border: 1px solid gray;
+    text-align: center;
+    background-image: url("../public/movies3.jpg");   
+    background-size: 100% auto;
+   
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  }
+  .pagination{
+    position: absolute; 
+    bottom: 0; 
+    margin-bottom: 40px;
+    width: 100%; 
+    text-align: center;
+  }
+
+  .progress-bar-container {
+    max-width: 90%;
+    height: 5px;
+    display: flex;
+    position: relative;
+  }
+  
+  
+  
+  .likes {
+    background-color: #4caf50;
+  }
+
+  .btndelete {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    border: lightblue solid 1px;
+    outline: none;
+    color: #fff !important;
+    border-radius: 10px;
+  }
+  
+  .btndelete:active {
+     -webkit-box-shadow: inset 1px 1px 10px #333;
+     -moz-box-shadow:    inset 1px 1px 10px #333;
+     box-shadow:         inset 1px 1px 10px #333;
+  }
+
+  .btnlike {
+    height: 40px;
+    width: 100px;
+    background-color: #3399FF;
+    border: lightblue solid 1px;
+    outline: none;
+    color: #fff !important;
+    border-radius: 10px;
+  }
+  
+  .btnlike:active {
+     -webkit-box-shadow: inset 1px 1px 10px #333;
+     -moz-box-shadow:    inset 1px 1px 10px #333;
+     box-shadow:         inset 1px 1px 10px #333;
+  }
+
+  .btnpage {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  
+  
+  
+  .btnpage:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .btnpage:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  
+  
+  
+
+  @media screen and (min-width: 768px) {
+    .card-container {
+      flex-wrap: nowrap;
+    }
+    .card {
+      flex: 1;
+    }
+  }
